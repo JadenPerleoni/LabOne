@@ -1,8 +1,6 @@
 public class Car extends MotorVehicle{
     public boolean isElectric;
 
-
-
     public Car(String color, boolean isElectric) {
         super(color);
         this.isElectric = isElectric;
