@@ -1,10 +1,15 @@
 public class Motorcycle extends MotorVehicle{
     public String tireColor;
 
-    public void start() {
-        super.running = true;
+    public Motorcycle(String color, String tireColor) {
+        super(color);
+        this.tireColor = tireColor;
+    }
 
-        System.out.println("This vehicle's color is: " + super.color + " " +
+    public void start() {
+        this.running = true;
+
+        System.out.println("This vehicle's color is: " + this.color + " " +
                 "and the inherited boolean returns " + true);
         System.out.println("This vehicle's tire color is: " + tireColor);
         System.out.println("This vehicle is a motorcycle");
@@ -12,8 +17,8 @@ public class Motorcycle extends MotorVehicle{
 
     }
     public void stop() {
-        super.running = false;
-        System.out.println("This vehicle's color is: " + super.color + " " +
+        this.running = false;
+        System.out.println("This vehicle's color is: " + this.color + " " +
                 "and the inherited boolean returns " + false);
         System.out.println("This vehicle's tire color is: " + tireColor);
         System.out.println("This vehicle is a motorcycle");

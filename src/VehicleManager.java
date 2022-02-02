@@ -6,41 +6,16 @@ public class VehicleManager {
 
 
     public static void run() {
-        Motorcycle firstMotorCycle = new Motorcycle();
-        Motorcycle secondMotorCycle = new Motorcycle();
-        Motorcycle thirdMotorCycle = new Motorcycle();
         Scanner scnr = new Scanner(System.in);
         int userChoice;
 
-        Car firstCar = new Car();
-        Car secondCar = new Car();
-        Car thirdCar = new Car();
+        Car firstCar = new Car("red",true);
+        Car secondCar = new Car("blue",false);
+        Car thirdCar = new Car("yellow",true);
 
-        firstMotorCycle.running = false;
-        secondMotorCycle.running = false;
-        thirdMotorCycle.running = false;
-
-        firstCar.running = false;
-        secondCar.running = false;
-        thirdCar.running = false;
-
-        firstCar.color = "red";
-        firstCar.isElectric = true;
-
-        secondCar.color = "blue";
-        secondCar.isElectric = false;
-
-        thirdCar.color = "yellow";
-        thirdCar.isElectric = true;
-
-        firstMotorCycle.color = "green";
-        firstMotorCycle.tireColor = "gold";
-
-        secondMotorCycle.color = "orange";
-        secondMotorCycle.tireColor = "red";
-
-        thirdMotorCycle.color = "purple";
-        thirdMotorCycle.tireColor = "green";
+        Motorcycle firstMotorCycle = new Motorcycle("green","black");
+        Motorcycle secondMotorCycle = new Motorcycle("orange","purple");
+        Motorcycle thirdMotorCycle = new Motorcycle("purple","green");
 
         carArray[0] = firstCar;
         carArray[1] = secondCar;

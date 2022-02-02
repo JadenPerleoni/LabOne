@@ -1,8 +1,15 @@
 public class Car extends MotorVehicle{
-    public boolean isElectric = true;
+    public boolean isElectric;
+
+
+
+    public Car(String color, boolean isElectric) {
+        super(color);
+        this.isElectric = isElectric;
+    }
 
     public void start() {
-        super.running = true;
+        this.running = true;
         System.out.println("This vehicle's color is: " + super.color + " " +
                 "and the inherited boolean returns " + true);
         System.out.println("Is this vehicle electric? " + isElectric);
@@ -11,8 +18,8 @@ public class Car extends MotorVehicle{
 
     }
     public void stop() {
-        super.running = false;
-        System.out.println("This vehicle's color is: " + super.color + " " +
+        this.running = false;
+        System.out.println("This vehicle's color is: " + this.color + " " +
                 "and the inherited boolean returns " + false);
         System.out.println("Is this vehicle electric? " + isElectric);
         System.out.println("This vehicle is a car");

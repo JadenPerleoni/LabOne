@@ -1,7 +1,20 @@
 public class MotorVehicle {
 
-    public boolean running = false;
-    public String color = "Red";
+    public boolean running;
+    public String color;
+
+    public MotorVehicle() {
+        this.running = false;
+        this.color = "Red";
+
+    }
+
+    public MotorVehicle(String color) {
+        this.running = false;
+        this.color = color;
+
+    }
+
 
 }
 
